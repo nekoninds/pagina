@@ -1,12 +1,6 @@
-<li>
-  <%= link_to 'Home', '/' %>
-</li>
-<li>
-  <%= link_to 'Materias', '/' %>
-</li>
-<li>
-  <%= link_to 'Fisica 1', '/' %>
-</li>
-<li>
-  <%= link_to 'Espectro Electrico', '/' %>
-</li>
+<%- @breadcrumbs.each do |bread| %>
+  <li>
+    <%- path = '/' + @breadcrumbs[1,@breadcrumbs.index(bread)].join('/').downcase %>
+    <%= link_to bread, path %>
+  </li>
+<% end %>
