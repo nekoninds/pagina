@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <%= render partial: 'header' %>
+</header>
+<div>
+  <nav>
+    <%= render partial: 'breadcrumbs' %>
+  </nav>
 
-<%= yield %>
+  <aside>
+    <%= render partial: 'navigation' %>
+  </aside>
 
+  <main>
+    <%= yield %>
+  </main>
+</div>
+  <footer>
+    <%= render partial: 'footer' %>
+</footer>
 </body>
 </html>
