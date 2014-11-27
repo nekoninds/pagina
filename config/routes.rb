@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :materias, only: :index
 
   namespace :materias do
-    resources :fisica, only: :index
+    resources :fisica, only: [:index, :show]
   end
 
 end

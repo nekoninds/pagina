@@ -1,0 +1,19 @@
+<h1><%= @page.titleize %></h1>
+<%= render partial: @page %>
+
+<%- content_for :navigation do %>
+  <nav>
+    <li>Espectro Electrico</li>
+    <li>
+      Propiedades de las Ondas
+      <ol>
+        <li><%= link_to 'Amplitud', materias_fisica_path('amplitud') %></li>
+        <li><%= link_to 'Frecuencia', materias_fisica_path('frecuencia') %></li>
+        <li>Periodo</li>
+        <li>Longitud</li>
+        <li>Velocidad</li>
+      </ol>
+    </li>
+    <li>Problemas de Aplicacion</li>
+  </nav>
+<% end %>

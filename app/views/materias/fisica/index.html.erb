@@ -69,27 +69,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <%- content_for :navigation do %>
   <nav>
     <li>Espectro Electrico</li>
     <li>
       Propiedades de las Ondas
       <ol>
-        <li>Amplitud</li>
-        <li>Frecuencia</li>
+        <li><%= link_to 'Amplitud', materias_fisica_path('amplitud') %></li>
+        <li><%= link_to 'Frecuencia', materias_fisica_path('frecuencia') %></li>
         <li>Periodo</li>
         <li>Longitud</li>
         <li>Velocidad</li>
@@ -97,4 +84,4 @@
     </li>
     <li>Problemas de Aplicacion</li>
   </nav>
-<% end %>
+<% end %>>
