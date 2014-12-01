@@ -13,7 +13,7 @@ class Materias::FisicaController < ApplicationController
 
   private
   def validate_page
-    redirect_to(root_path) unless %w{amplitud frecuencia longitud velocidad espectro_electrico problemas_de_aplicacion propiedades_de_las_ondas bibliografia contacto }.include?(params[:id])
+    redirect_to(root_path) unless %w{amplitud frecuencia periodo longitud velocidad espectro_electrico problemas_de_aplicacion propiedades_de_las_ondas bibliografia contacto }.include?(params[:id])
   end
 
   def set_breadcrumbs
