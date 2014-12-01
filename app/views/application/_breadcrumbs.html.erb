@@ -1,5 +1,5 @@
 <%- @breadcrumbs.each do |bread| %>
-  <li>
+  <li class="<%= 'current' if bread == @breadcrumbs.last %>">
     <%- path = '/' + @breadcrumbs[1,@breadcrumbs.index(bread)].join('/').downcase %>
     <%= link_to bread, path %>
   </li>

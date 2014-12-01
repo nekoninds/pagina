@@ -1,12 +1,29 @@
-<%= link_to 'http://www.ucol.mx/' do %>
-  <%= image_tag 'http://imagenes.universia.net/mx/Institution/30222_Universidad_de_Colima.jpg', alt: 'Universidad de Colima' %>
-<% end %>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <%= link_to image_tag('logo.png', alt: 'Universidad de Colima'), 'http://www.ucol.mx/' %>
+    </li>
+  </ul>
 
-<%= link_to 'http://telematicanet.ucol.mx/' do %>
-  <%= image_tag 'http://telematicanet.ucol.mx/templates/company/images/logo.png', alt: 'Facultad de Telematica' %>
-<% end %>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="has-dropdown">
+        <%= link_to 'Hector', '#' %>
+        <ul class="dropdown">
+          <li><%= link_to 'Acerca de Mí', '#'%></li>
+          <li><%= link_to 'Contacto', '#' %></li>
+        </ul>
+      </li>
+    </ul>
 
-<menu>
-    <%= link_to 'Hector', contacto_index_path %>
-
-  </menu>
+    <ul class="left">
+      <li><%= link_to 'Home', root_path %></li>
+      <li class='has-dropdown'>
+        <%= link_to 'Materias', root_path %>
+        <ul class="dropdown">
+          <li><%= link_to 'Fisica', '#'%></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>

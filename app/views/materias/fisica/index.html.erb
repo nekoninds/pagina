@@ -1,12 +1,12 @@
 <h1><%= @title %></h1>
 
-<h2> 
+<h2>
   Campo Magnetico.
 </h2>
 
 
 <p>
-    Se trata de un campo que ejerce fuerzas (denominadas magnéticas) sobre los materiales. Al igual que el campo eléctrico también es un campo vectorial, pero que no produce ningún efecto sobre cargas en reposo (como sí lo hace el campo eléctrico en dónde las acelera a través de la fuerza eléctrica). 
+    Se trata de un campo que ejerce fuerzas (denominadas magnéticas) sobre los materiales. Al igual que el campo eléctrico también es un campo vectorial, pero que no produce ningún efecto sobre cargas en reposo (como sí lo hace el campo eléctrico en dónde las acelera a través de la fuerza eléctrica).
 
     Sin embargo el campo magnético tiene influencia sobre cargas eléctricas en movimiento.
 
@@ -67,19 +67,6 @@
     Cuando la carga q es negativa, el sentido de B es opuesto al que se muestra en la figura. El campo magnético en la dirección del movimiento es nulo, ya que en este caso los vectores v y ur son paralelos y su producto vectorial es cero.
     </p>
 
-
-
 <%- content_for :navigation do %>
-  <nav>
-    <li><%= link_to 'Espectro electrico', materias_fisica_path('espectro_electrico') %></li>
-    <li><%= link_to 'Propiedades de las Ondas', materias_fisica_path('propiedades_de_las_ondas') %>
-      <ol>
-        <li><%= link_to 'Amplitud', materias_fisica_path('amplitud') %></li>
-        <li><%= link_to 'Frecuencia', materias_fisica_path('frecuencia') %></li>
-        <li><%= link_to 'Longitud', materias_fisica_path('longitud') %></li>
-        <li><%= link_to 'Velocidad', materias_fisica_path('velocidad') %></li>
-      </ol>
-    </li>
-    <li><%= link_to 'Problemas de aplicacion', materias_fisica_path('problemas_de_aplicacion') %></li>
-  </nav>
+  <%= render partial: 'navigation' %>
 <% end %>
