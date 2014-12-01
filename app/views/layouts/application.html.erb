@@ -14,8 +14,8 @@
       <%= render partial: 'header' %>
     </header>
 
-    <div class="row">
-      <nav class='breadcrumbs'><%= render partial: 'breadcrumbs' %></nav>
+    <nav class='breadcrumbs'><%= render partial: 'breadcrumbs' %></nav>
+    <div class="row main">
       <main class="columns <%= content_for?(:navigation) ? 'large-9' : 'large-12'%>">
         <%= yield %>
       </main>
