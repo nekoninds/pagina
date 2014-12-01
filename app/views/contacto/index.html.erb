@@ -1,28 +1,35 @@
-Contacto
-<%- content_for :navigation do %>
-  <nav>
-    <li>
-      <%= link_to 'Contacto', '/contacto' %>
-    </li>
-  </nav>
-<% end %>
+<h1>Contacto</h1>
+<div class='large-6 columns'>
+  <h2>Acerca de mi: </h2>
+  <p>
+  Estudiante de la carrera Ingenieria en Telematica en la Universidad de Colima. Me gusta el anime, los videojuegos en especial los mmorpg
+  e informacion relacionada con la tecnologia.
+  </p>
 
-<h1>
-  Contacto.
-</h1>
+  <h3>Mis datos:</h3>
+  <dl>
+    <dt>Nombre:</dt>
+    <dd>Hector Miguel Rodriguez Muñiz.</dd>
+    <dt>Email:</dt>
+    <dd>hector.m.rm@hotmail.com</dd>
+    <dt>Facebook:</dt>
+    <dd>Ninds.Dr.Mono</dd>
+  </dl>
 
-<%= image_tag 'https://s3-us-west-2.amazonaws.com/asml.sas/1462673_10205528618043616_1486566291084264130_o.jpg' %>
+  <h3>Datos del Profesor:</h3>
+  <dl>
+    <dt>Nombre:</dt>
+    <dd>Dario Pozos Zepeda. </dd>
+    <dt>Email:</dt>
+    <dd>dario@ucol.mx</dd>
+  </dl>
 
-<dl>
-  <dt>Hector Miguel Rodriguez Muñiz.</dt>
-  <dt>hector.m.rm@hotmail.com</dt>
-  <dt> Facebook/Ninds.Dr.Mono ></dt>
-  <dt> Universidad de Colima. Facultad de Telematica. </dt>
-  <dt> Profesor: Dario Pozos Zepeda. </dt>
-  <dt> Correo del profesor: dario@ucol.mx</dt>
-  <dt>Diciembre 2014</dt>
-</dl>
+  <p>
+    <strong>Universidad de Colima. Facultad de Telematica.</strong>
+    <br/>
+    Diciembre 2014
+  </p>
+</div>
 
-<p> <b>Acerca de mi:<b> </p>
-    <p> Estudiante de la carrera Ingenieria en Telematica en la Universidad de Colima. Me gusta el anime, los videojuegos en especial los mmorpg
-    e informacion relacionada con la tecnologia. </p>
+<%= image_tag 'https://s3-us-west-2.amazonaws.com/asml.sas/1462673_10205528618043616_1486566291084264130_o.jpg', class: 'large-6 columns' %>
+

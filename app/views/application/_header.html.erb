@@ -10,8 +10,8 @@
       <li class="has-dropdown">
         <%= link_to 'Hector', '#' %>
         <ul class="dropdown">
-          <li><%= link_to 'Acerca de Mí', '#'%></li>
-          <li><%= link_to 'Contacto', '#' %></li>
+          <li><%= link_to 'Acerca de Mí', contacto_index_path %></li>
+          <li><%= link_to 'Bibliografía', bibliografia_path %></li>
         </ul>
       </li>
     </ul>
@@ -19,9 +19,9 @@
     <ul class="left">
       <li><%= link_to 'Home', root_path %></li>
       <li class='has-dropdown'>
-        <%= link_to 'Materias', root_path %>
+        <%= link_to 'Materias', materias_path %>
         <ul class="dropdown">
-          <li><%= link_to 'Fisica', '#'%></li>
+          <li><%= link_to 'Fisica', materias_fisica_index_path %></li>
         </ul>
       </li>
     </ul>
